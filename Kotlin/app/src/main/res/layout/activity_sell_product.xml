@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/content"
+    android:layout_margin="20dp"
+    tools:context=".activities.LoginActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputProductName"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        app:layout_constraintBottom_toTopOf="@id/textInputProductPrice"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed">
+
+        <securecodewarrior.ecommerceapp.widget.NoMenuEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputProductPrice"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Price"
+        app:layout_constraintBottom_toTopOf="@id/buttonSell"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textInputProductName"
+        android:filterTouchesWhenObscured="true">
+
+        <securecodewarrior.ecommerceapp.widget.NoMenuEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="numberDecimal" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/buttonSell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="SELL"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textInputProductPrice"
+        android:filterTouchesWhenObscured="false"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
