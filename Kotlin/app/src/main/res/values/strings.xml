@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SocialApp</string>
+    <string name="register">REGISTER</string>
+    <string name="fingerprint_failed">Fingerprint detection failed</string>
+    <string name="logout">Logout</string>
+    <string name="delete_account">Delete account</string>
+</resources>
