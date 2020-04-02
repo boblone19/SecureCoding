@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:filterTouchesWhenObscured="false"
+    tools:context="com.securecodewarrior.kotlinandroidscwbank.gui.transactions.TransferActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tv_activity_transfer_accountnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BE9494 9393 9393"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Transferor" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:paddingTop="20dp"
+            android:src="@drawable/ic_person" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="noExcludeDescendants">
+
+            <android.widget.AutoCompleteTextView
+                android:id="@+id/et_activity_transfer_to"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Transferee account number"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:paddingTop="20dp"
+            android:src="@drawable/ic_euro_symbol_black_24px" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="noExcludeDescendants">
+
+            <EditText
+                android:id="@+id/et_activity_transfer_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Amount"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:paddingTop="20dp"
+            android:src="@drawable/ic_chat_bubble" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="noExcludeDescendants">
+
+            <EditText
+                android:id="@+id/et_activity_transfer_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Message"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent2" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_activity_transfer_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimary"
+        android:text="Confirm"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>
