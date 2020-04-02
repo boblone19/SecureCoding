@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.securecodewarrior.kotlinandroidscwbank.gui.login.SelectPinActivity">
+
+    <LinearLayout
+        android:id="@+id/pin_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/headerText"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Enter pin you want to use"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="26sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="8dp"
+            android:addStatesFromChildren="true"
+            android:background="@android:drawable/edit_text"
+            android:baselineAligned="false"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingEnd="0dp">
+
+            <EditText
+                android:id="@+id/pinDisplay"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:maxLines="1" />
+
+            <ImageButton
+                android:id="@+id/backspace"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="2dp"
+                android:background="#FFF"
+                android:filterTouchesWhenObscured="true"
+                android:gravity="center"
+                android:src="@drawable/ic_backspace" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0sp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/one"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0sp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:filterTouchesWhenObscured="true"
+                android:paddingStart="4dp"
+                android:text="1"
+                android:textSize="22sp"
+                tools:text="1" />
+
+            <Button
+                android:id="@+id/two"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0sp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:filterTouchesWhenObscured="true"
+                android:paddingStart="4dp"
+                android:text="2"
+                android:textSize="22sp"
+                tools:text="2" />
+
+            <Button
+                android:id="@+id/three"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0sp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:filterTouchesWhenObscured="true"
+                android:paddingStart="4dp"
+                android:text="3"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0sp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/four"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0sp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:filterTouchesWhenObscured="true"
+                android:paddingStart="4dp"
+                android:text="4"
+                android:textSize="22sp"
+                tools:text="4" />
+
+            <Button
+                android:id="@+id/five"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0sp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:filterTouchesWhenObscured="true"
+                android:paddingStart="4dp"
+                android:text="5"
+                android:textSize="22sp"
+                tools:text="5" />
+
+            <Button
+                android:id="@+id/six"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0sp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:filterTouchesWhenObscured="true"
+                android:paddingStart="4dp"
+                android:text="6"
+                android:textSize="22sp"
+                tools:text="6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0sp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/seven"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0sp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:filterTouchesWhenObscured="true"
+                android:paddingStart="4dp"
+                android:text="7"
+                android:textSize="22sp"
+                tools:text="7" />
+
+            <Button
+                android:id="@+id/eight"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0sp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:filterTouchesWhenObscured="true"
+                android:paddingStart="4dp"
+                android:text="8"
+                android:textSize="22sp"
+                tools:text="8" />
+
+            <Button
+                android:id="@+id/nine"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0sp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:filterTouchesWhenObscured="true"
+                android:paddingStart="4dp"
+                android:text="9"
+                android:textSize="22sp"
+                tools:text="9" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0sp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/zero"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0sp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:filterTouchesWhenObscured="true"
+                android:paddingStart="4dp"
+                android:text="0"
+                android:textSize="22sp"
+                tools:text="0" />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
